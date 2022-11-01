@@ -1,6 +1,6 @@
 import {StyleSheet, View, Text} from 'react-native';
 
-export default function Lista(){
+export default function Config(){
     return(
         <View style={styles.container}>
             <Text style={styles.title}>Configurações</Text>
