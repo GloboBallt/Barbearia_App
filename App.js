@@ -36,6 +36,9 @@ export default function App() {
               ? 'ios-settings'
               : 'ios-settings-outline';
           }
+          else if (route.name === 'Cadastro') {
+            
+          }
 
           return <Ionicons name={iconName} size={size} color={color} />;
         },
@@ -47,7 +50,7 @@ export default function App() {
         <Tab.Screen name="Lista" component={Lista} />
         <Tab.Screen name="Config" component={Settings} />
         <Tab.Screen name="Sair" component={Login} options={{ tabBarStyle: {display: 'none'}} }/>
-        <Tab.Screen name="Cadastro" component={Cadastro} options={{ tabBarStyle: {display: 'none'}} }/>
+        <Tab.Screen name="Cadastro" component={Cadastro} options={{ tabBarStyle: {display: 'none'}, lazy: false }}/>
       </Tab.Navigator>
     </NavigationContainer>
   );

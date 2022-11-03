@@ -4,7 +4,6 @@ import PhoneInput from 'react-native-phone-input'
 import Home from './Home';
 
 
-
 export default function Cadastro({ navigation }) {
   return (
       <View style={styles.container}>
@@ -13,11 +12,11 @@ export default function Cadastro({ navigation }) {
         </View>
         <View style={styles.inputContainer}>
           <Text>Nome Completo:</Text>
-          <TextInput style={styles.input} />
+          <TextInput style={styles.input} placeholder="Nome"/>
           <Text>Telefone:</Text>
-          <PhoneInput style={styles.input} initialCountry={'br'}/>
+          <PhoneInput style={styles.input} initialCountry={'br'} autoFormat={true}/>
           <Text>Email:</Text>
-          <TextInput style={styles.input} autoComplete={true}/>
+          <TextInput style={styles.input} placeholder="Email"/>
           <Text>Senha:</Text>
           <TextInput style={styles.input} secureTextEntry={true}/>
           <Text>Confirme a senha:</Text>
